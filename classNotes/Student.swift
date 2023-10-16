@@ -7,6 +7,12 @@
 
 import Foundation
 public class Student{
+    
+    enum Rating{
+        case fire
+        case mid
+        case trash
+    }
   
     var name : String
     var age : Int
@@ -29,8 +35,7 @@ public class Student{
         var name : String
         var age : Int
         var money : Double
-        
-        
+        var rating : Rating
         
     }
     

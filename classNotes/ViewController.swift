@@ -31,7 +31,20 @@ class ViewController: UIViewController {
         
         
         
-       // var struct1 = StudentStruct(name: "BOB", age: 32, money: 2000.33)
+        var struct1 = StudentStruct(name: "BOB", age: 32, money: 2000.33, rating: Rating.fire)
+        print(struct1.name)
+        
+        switch struct1.rating {
+        case Rating.fire:
+            print("you are fire")
+        case Rating.mid:
+            print("you are mid")
+        case Rating.trash:
+            print("trash")
+        default:
+            print("you are nothing")
+        }
+        
         
     }
 
